@@ -1,0 +1,103 @@
+import {
+  Atom,
+  Code2,
+  Database,
+  Server,
+  Cloud,
+  Smartphone,
+  Box,
+  ShieldCheck,
+  Palette,
+  Cpu,
+  Globe,
+  Workflow,
+} from "lucide-react";
+
+const technologies = [
+  {
+    id: 1,
+    title: "React",
+    description: "Building fast, interactive, and scalable user interfaces for modern web applications.",
+    icon: Atom,
+    color: "text-cyan-400",
+  },
+  {
+    id: 2,
+    title: "Django",
+    description: "Developing secure, scalable, and high-performance web applications with Python.",
+    icon: Server,
+    color: "text-emerald-400",
+  },
+  {
+    id: 3,
+    title: "Python",
+    description: "Creating powerful, flexible, and efficient solutions for web, automation, and data applications.",
+    icon: Code2,
+    color: "text-yellow-400",
+  },
+  {
+    id: 4,
+    title: "Database",
+    description: "Managing and organizing business data securely for reliable and efficient application performance.",
+    icon: Database,
+    color: "text-blue-400",
+  },
+  {
+    id: 5,
+    title: "AWS Cloud",
+    description: "Delivering scalable, secure, and reliable cloud solutions for modern business applications.",
+    icon: Cloud,
+    color: "text-orange-400",
+  },
+  {
+    id: 6,
+    title: "Docker",
+    description: "Simplifying application deployment with lightweight, consistent, and isolated development environments.",
+    icon: Box,
+    color: "text-sky-400",
+  },
+  {
+    id: 7,
+    title: "React Native",
+    description: "Building high-performance cross-platform mobile applications with a seamless user experience.",
+    icon: Smartphone,
+    color: "text-red-400",
+  },
+  {
+    id: 8,
+    title: "Cyber Security",
+    description: "Protecting applications and business data from evolving cyber threats and security risks.",
+    icon: ShieldCheck,
+    color: "text-green-400",
+  },
+  {
+    id: 9,
+    title: "UI/UX Design",
+    description: "Creating intuitive, engaging, and user-friendly digital experiences that enhance customer interaction.",
+    icon: Palette,
+    color: "text-pink-400",
+  },
+  {
+    id: 10,
+    title: "Artificial Intelligence",
+    description: "Building intelligent solutions that automate processes, analyze data, and drive smarter decisions.",
+    icon: Cpu,
+    color: "text-violet-400",
+  },
+  {
+    id: 11,
+    title: "REST APIs",
+    description: "Enabling secure and seamless communication between applications, services, and data sources.",
+    icon: Globe,
+    color: "text-indigo-400",
+  },
+  {
+    id: 12,
+    title: "DevOps",
+    description: "Streamlining development and deployment through automation, collaboration, and continuous delivery.",
+    icon: Workflow,
+    color: "text-emerald-300",
+  },
+];
+
+export default technologies;

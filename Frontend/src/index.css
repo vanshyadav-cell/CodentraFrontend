@@ -1,0 +1,11 @@
+@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+.active {
+  color: white;
+}
+
+.active::after {
+  width: 100%;
+}
