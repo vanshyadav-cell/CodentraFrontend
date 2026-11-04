@@ -3,7 +3,7 @@ import ContactInfo from "./ContactInfo";
 import ContactForm from "./ContactForm";
 import { useState } from "react";
 import axios from "axios";
-
+const API_URL=import.meta.env.VITE_API_BASE_URL;
 function Contact() {
   const [formData, setFormData] = useState({
   name: "",
@@ -25,7 +25,7 @@ function Contact() {
 
   try {
     await axios.post(
-      "http://127.0.0.1:8000/api/contact/",
+      `${API_URL}/api/contact/`,
       formData
     );
 

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../sections/Footer/Footer";
 import Container from "../components/Common/Container";
-
+const API_URL= import.meta.env.VITE_API_BASE_URL;
 const Career = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -34,7 +34,7 @@ const Career = () => {
     data.append("resume", formData.resume);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/career/", {
+      const response = await fetch(`${API_URL}/api/career/`, {
         method: "POST",
         body: data,
       });
