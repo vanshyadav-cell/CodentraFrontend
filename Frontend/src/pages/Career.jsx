@@ -25,36 +25,44 @@ const Career = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    const data = new FormData();
-    data.append("name", formData.name);
-    data.append("email", formData.email);
-    data.append("phone", formData.phone);
-    data.append("resume", formData.resume);
+  const data = new FormData();
+  data.append("name", formData.name);
+  data.append("email", formData.email);
+  data.append("phone", formData.phone);
+  data.append("resume", formData.resume);
 
-    try {
-      const response = await fetch(`${API_URL}/api/career/`, {
-        method: "POST",
-        body: data,
+  try {
+    const response = await fetch(`${API_URL}/api/career/`, {
+      method: "POST",
+      body: data,
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      alert("Resume submitted successfully!");
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        resume: null,
       });
 
-      if (response.ok) {
-        alert("Resume submitted successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          resume: null,
-        });
-      } else {
-        alert("Something went wrong.");
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
+      e.target.reset();
 
+    } else {
+      console.log("Career API Error:", result);
+      alert(JSON.stringify(result));
+    }
+
+  } catch (error) {
+    console.log("Network Error:", error);
+    alert("Something went wrong. Please try again.");
+  }
+};
   return (
     <>
       <Navbar />
