@@ -40,9 +40,14 @@ function Contact() {
     });
 
   } catch (error) {
-    console.log(error);
-    alert("Something went wrong");
-  }
+    console.log("API ERROR:", error.response?.data);
+
+    alert(
+      JSON.stringify(
+        error.response?.data || error.message
+      )
+    );
+}
 };
 
 
