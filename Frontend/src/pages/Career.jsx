@@ -168,25 +168,27 @@ const Career = () => {
                 <label className=" text-white text-lg">Upload Resume</label>
 
                 <input
-                  type="file"
-                  accept=".pdf,.doc,.docx"
-                  onChange={handleChange}
-                  className="w-72 text-gray-300
-                  file:mr-4
-      file:px-5
-      file:py-3
-      file:rounded-lg
-      file:border-0
-      file:bg-gray-600
-      file:text-white
-      file:font-medium
-      file:cursor-pointer
-      hover:file:bg-gray-500
-      border border-gray-600
-      rounded-lg
-      p-2
-      bg-[#111827]"
-                />
+  type="file"
+  name="resume"
+  accept=".pdf,.doc,.docx"
+  onChange={handleChange}
+  required
+  className="w-72 text-gray-300
+    file:mr-4
+    file:px-5
+    file:py-3
+    file:rounded-lg
+    file:border-0
+    file:bg-gray-600
+    file:text-white
+    file:font-medium
+    file:cursor-pointer
+    hover:file:bg-gray-500
+    border border-gray-600
+    rounded-lg
+    p-2
+    bg-[#111827]"
+/>
               </div>
               <button
                 type="submit"
