@@ -1,7 +1,7 @@
 import {
   FaTwitter,
   FaLinkedin,
-  FaFacebook,
+  FaWhatsapp,
   FaInstagram,
 } from "react-icons/fa";
 
@@ -67,6 +67,6 @@ export const footerLinks = [
 export const socialLinks = [
   { icon: FaLinkedin, href: "https://www.linkedin.com/company/codentrai/" },
   { icon: FaTwitter, href: "https://x.com/codentrai" },
-  { icon: FaFacebook, href: "codentrai.com" },
+  { icon: FaWhatsapp, href: "https://wa.me/7905965334" },
   { icon: FaInstagram, href: "https://www.instagram.com/codentrai/" },
 ];
