@@ -35,7 +35,7 @@ function FooterBrand() {
             size={18}
             className="text-cyan-400"
           />
-          <span>hello@company.com</span>
+          <span>akaskyadav2000@gmail.com</span>
         </div>
 
         <div className="flex items-center gap-3 text-slate-400">
@@ -43,7 +43,7 @@ function FooterBrand() {
             size={18}
             className="text-cyan-400"
           />
-          <span>+91 98765 43210</span>
+          <span>+91 7905965334</span>
         </div>
 
         <div className="flex items-center gap-3 text-slate-400">

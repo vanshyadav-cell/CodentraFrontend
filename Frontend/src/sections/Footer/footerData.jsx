@@ -1,5 +1,5 @@
 import {
-  FaGithub,
+  FaTwitter,
   FaLinkedin,
   FaFacebook,
   FaInstagram,
@@ -65,8 +65,8 @@ export const footerLinks = [
 ];
 
 export const socialLinks = [
-  { icon: FaLinkedin, href: "#" },
-  { icon: FaGithub, href: "#" },
-  { icon: FaFacebook, href: "#" },
-  { icon: FaInstagram, href: "#" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/company/codentrai/" },
+  { icon: FaTwitter, href: "https://x.com/codentrai" },
+  { icon: FaFacebook, href: "codentrai.com" },
+  { icon: FaInstagram, href: "https://www.instagram.com/codentrai/" },
 ];

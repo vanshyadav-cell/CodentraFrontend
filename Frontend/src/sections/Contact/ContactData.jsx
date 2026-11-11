@@ -17,8 +17,8 @@ export const contactInfo = [
     id: 2,
     icon: Mail,
     title: "Email",
-    value: "hello@yourcompany.com",
-    link: "mailto:hello@yourcompany.com",
+    value: "akaskyadav2000@gmail.com",
+    link: "mailto:akaskyadav2000@gmail.com",
   },
   {
     id: 3,
